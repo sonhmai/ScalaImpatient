@@ -13,7 +13,8 @@ object Ex5MaxFuncValue extends App {
  */
 object Ex6MaxFuncValue extends App {
   def largestInput(fun: (Int) => Int, inputs: Seq[Int]): Int = {
-    val i = for (n <- inputs.indices if
+    // maybe use indices?
+    5
   }
 
   assert(largestInput(x => 10 * x - x * x, 1 to 10) == 5)
