@@ -15,7 +15,7 @@ trait Ex1RectangleLike {
    * @param dx distance to move along X axis
    * @param dy distance to move along Y axis
    */
-  def translate(dx: Int, dy: Int)
+  def translate(dx: Int, dy: Int) = ???
 
 
   /**
@@ -28,5 +28,5 @@ trait Ex1RectangleLike {
    * @param h horizontal expansion
    * @param v vertical expasion
    */
-  def grow(h: Int, v: Int)
+  def grow(h: Int, v: Int) = ???
 }
