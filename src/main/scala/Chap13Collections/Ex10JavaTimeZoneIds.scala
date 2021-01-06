@@ -4,7 +4,7 @@ package Chap13Collections
  * java.util.TimeZone.getAvailableIDs
  * Which continent has most time zones?
  */
-object Ex10JavaTimeZoneIds extends App {
+  object Ex10JavaTimeZoneIds extends App {
   val timezones: Array[String] = java.util.TimeZone.getAvailableIDs
   val continents = timezones
     .filter(s => s.contains("/"))
