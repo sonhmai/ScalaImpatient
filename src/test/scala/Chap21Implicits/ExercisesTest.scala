@@ -79,7 +79,8 @@ object Solution {
 
   def average[T](seq: Seq[T])(implicit evidence: NumberLike[T]): T = {
     if (seq.isEmpty) {
-      throw UnsupportedOperationException
+      // TODO - should return exception or type class empty? how to throw exception in this?
+      evidence.empty
     }
     else {
     evidence.divideBy(seq.reduce((x, y) => evidence.plus(x, y)), seq.size)
